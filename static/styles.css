@@ -1,0 +1,131 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Box */
+.container {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+textarea,
+input[type="file"],
+select {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+textarea:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    transform: translateY(-2px);
+}
+
+/* MCQ Section */
+.list-group-item {
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.list-group-item:hover {
+    background: #ecf0f1;
+    transform: scale(1.02);
+}
+
+/* Highlight Correct Answer */
+.list-group-item-success {
+    background: linear-gradient(to right, #2ecc71, #27ae60) !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Back Button */
+a.btn-secondary {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+a.btn-secondary:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    transform: translateY(-2px);
+}

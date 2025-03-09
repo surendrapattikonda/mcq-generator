@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated MCQs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Generated MCQs</h2>
+        <a href="/" class="btn btn-secondary mb-3">Back to Home</a>
+
+        <div class="list-group">
+            {% for i, (question, choices, correct) in mcqs %}
+                <div class="list-group-item">
+                    <p><strong>Q{{ i }}:</strong> {{ question }}</p>
+                    <ul class="list-group">
+                        {% for choice in choices %}
+                            <li class="list-group-item {% if choice == correct %}list-group-item-success{% endif %}">
+                                {{ choice }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
